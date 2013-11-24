@@ -114,9 +114,9 @@
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="numberOfColumn">
-                            <integer key="value" value="3"/>
+                            <integer key="value" value="2"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="nameOfPlistFile" value="CityPicker"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nameOfPlistFile" value="AppleDevices"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dbd-zb-dL9" userLabel="First Responder" sceneMemberID="firstResponder"/>

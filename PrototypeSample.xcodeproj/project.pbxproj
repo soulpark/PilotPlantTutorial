@@ -20,6 +20,15 @@
 		2C843952182E7C6A00DE0B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C843934182E7C6A00DE0B89 /* UIKit.framework */; };
 		2C84395A182E7C6A00DE0B89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C843958182E7C6A00DE0B89 /* InfoPlist.strings */; };
 		2C84395C182E7C6A00DE0B89 /* PrototypeSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84395B182E7C6A00DE0B89 /* PrototypeSampleTests.m */; };
+		2C86F6B11841A2AF00F4AC68 /* LSSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86F6AD1841A2AF00F4AC68 /* LSSlideMenuViewController.m */; };
+		2C86F6B21841A2AF00F4AC68 /* TopStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6AE1841A2AF00F4AC68 /* TopStoryboard.storyboard */; };
+		2C86F6B31841A2AF00F4AC68 /* LeftBaseMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6AF1841A2AF00F4AC68 /* LeftBaseMenu.storyboard */; };
+		2C86F6B41841A2AF00F4AC68 /* RightBaseMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6B01841A2AF00F4AC68 /* RightBaseMenu.storyboard */; };
+		2C86F6B91841A2CC00F4AC68 /* lingostar_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6B51841A2CC00F4AC68 /* lingostar_avatar.png */; };
+		2C86F6BA1841A2CC00F4AC68 /* Lingostar_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6B61841A2CC00F4AC68 /* Lingostar_small.png */; };
+		2C86F6BB1841A2CC00F4AC68 /* codershigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6B71841A2CC00F4AC68 /* codershigh.png */; };
+		2C86F6BC1841A2CC00F4AC68 /* huddlebooks_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C86F6B81841A2CC00F4AC68 /* huddlebooks_small.png */; };
+		2C86F6C01841A30F00F4AC68 /* LSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86F6BF1841A30F00F4AC68 /* LSWebViewController.m */; };
 		2CCF574C182EA4EA00A748EF /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF574A182EA4EA00A748EF /* UIViewController+Storyboard.m */; };
 		2CD78262182F20CC00CF250C /* AppleDevices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CD7825E182F20CC00CF250C /* AppleDevices.plist */; };
 		2CD78263182F20CC00CF250C /* Characters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CD7825F182F20CC00CF250C /* Characters.plist */; };
@@ -78,6 +87,17 @@
 		2C843957182E7C6A00DE0B89 /* PrototypeSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrototypeSampleTests-Info.plist"; sourceTree = "<group>"; };
 		2C843959182E7C6A00DE0B89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C84395B182E7C6A00DE0B89 /* PrototypeSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeSampleTests.m; sourceTree = "<group>"; };
+		2C86F6AC1841A2AF00F4AC68 /* LSSlideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSlideMenuViewController.h; sourceTree = "<group>"; };
+		2C86F6AD1841A2AF00F4AC68 /* LSSlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSlideMenuViewController.m; sourceTree = "<group>"; };
+		2C86F6AE1841A2AF00F4AC68 /* TopStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopStoryboard.storyboard; sourceTree = "<group>"; };
+		2C86F6AF1841A2AF00F4AC68 /* LeftBaseMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftBaseMenu.storyboard; sourceTree = "<group>"; };
+		2C86F6B01841A2AF00F4AC68 /* RightBaseMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RightBaseMenu.storyboard; sourceTree = "<group>"; };
+		2C86F6B51841A2CC00F4AC68 /* lingostar_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lingostar_avatar.png; sourceTree = "<group>"; };
+		2C86F6B61841A2CC00F4AC68 /* Lingostar_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lingostar_small.png; sourceTree = "<group>"; };
+		2C86F6B71841A2CC00F4AC68 /* codershigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codershigh.png; sourceTree = "<group>"; };
+		2C86F6B81841A2CC00F4AC68 /* huddlebooks_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huddlebooks_small.png; sourceTree = "<group>"; };
+		2C86F6BE1841A30F00F4AC68 /* LSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWebViewController.h; sourceTree = "<group>"; };
+		2C86F6BF1841A30F00F4AC68 /* LSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSWebViewController.m; sourceTree = "<group>"; };
 		2CCF5749182EA4EA00A748EF /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
 		2CCF574A182EA4EA00A748EF /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
 		2CD7825E182F20CC00CF250C /* AppleDevices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppleDevices.plist; path = PickerViewPlist/AppleDevices.plist; sourceTree = "<group>"; };
@@ -173,10 +193,12 @@
 			children = (
 				2C84393F182E7C6A00DE0B89 /* CHAppDelegate.h */,
 				2C843940182E7C6A00DE0B89 /* CHAppDelegate.m */,
+				2C86F6AA18419F8200F4AC68 /* SlideMenu */,
 				2CCF574E182EA50800A748EF /* CustomSegue */,
 				2CCF574D182EA4F200A748EF /* ViewControllerCategory */,
 				2CCF5744182EA4B900A748EF /* ScrollView */,
 				2CCF5745182EA4CB00A748EF /* PickerView */,
+				2C86F6BD1841A2FE00F4AC68 /* WebView */,
 				2CCF5746182EA4D400A748EF /* PagingScrollView */,
 				2C843942182E7C6A00DE0B89 /* Navigation.storyboard */,
 				2CD78286182F217D00CF250C /* ContentViews.storyboard */,
@@ -190,6 +212,7 @@
 		2C843937182E7C6A00DE0B89 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C86F6AB18419F9500F4AC68 /* SlideMenuImages */,
 				2C843938182E7C6A00DE0B89 /* PrototypeSample-Info.plist */,
 				2C843998182E85C300DE0B89 /* PickerViewPlist */,
 				2C84398F182E84C000DE0B89 /* PagingScrollViewImage */,
@@ -258,6 +281,38 @@
 				2CD78261182F20CC00CF250C /* Cusine.plist */,
 			);
 			name = PickerViewPlist;
+			sourceTree = "<group>";
+		};
+		2C86F6AA18419F8200F4AC68 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2C86F6AC1841A2AF00F4AC68 /* LSSlideMenuViewController.h */,
+				2C86F6AD1841A2AF00F4AC68 /* LSSlideMenuViewController.m */,
+				2C86F6AE1841A2AF00F4AC68 /* TopStoryboard.storyboard */,
+				2C86F6AF1841A2AF00F4AC68 /* LeftBaseMenu.storyboard */,
+				2C86F6B01841A2AF00F4AC68 /* RightBaseMenu.storyboard */,
+			);
+			name = SlideMenu;
+			sourceTree = "<group>";
+		};
+		2C86F6AB18419F9500F4AC68 /* SlideMenuImages */ = {
+			isa = PBXGroup;
+			children = (
+				2C86F6B51841A2CC00F4AC68 /* lingostar_avatar.png */,
+				2C86F6B61841A2CC00F4AC68 /* Lingostar_small.png */,
+				2C86F6B71841A2CC00F4AC68 /* codershigh.png */,
+				2C86F6B81841A2CC00F4AC68 /* huddlebooks_small.png */,
+			);
+			name = SlideMenuImages;
+			sourceTree = "<group>";
+		};
+		2C86F6BD1841A2FE00F4AC68 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				2C86F6BE1841A30F00F4AC68 /* LSWebViewController.h */,
+				2C86F6BF1841A30F00F4AC68 /* LSWebViewController.m */,
+			);
+			name = WebView;
 			sourceTree = "<group>";
 		};
 		2CCF5744182EA4B900A748EF /* ScrollView */ = {
@@ -393,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CD78299182F24F500CF250C /* LSLongContentViewController.xib in Resources */,
+				2C86F6B91841A2CC00F4AC68 /* lingostar_avatar.png in Resources */,
 				2C843949182E7C6A00DE0B89 /* Images.xcassets in Resources */,
 				2CD78272182F20E100CF250C /* Nell_5.jpg in Resources */,
 				2CD7827E182F213600CF250C /* 0001_1.png in Resources */,
@@ -400,16 +456,22 @@
 				2CD7826E182F20E100CF250C /* Nell_1.jpg in Resources */,
 				2CD78288182F217D00CF250C /* ContentViews.storyboard in Resources */,
 				2CD78285182F213600CF250C /* 0001_8.png in Resources */,
+				2C86F6BA1841A2CC00F4AC68 /* Lingostar_small.png in Resources */,
 				2C84393B182E7C6A00DE0B89 /* InfoPlist.strings in Resources */,
+				2C86F6B21841A2AF00F4AC68 /* TopStoryboard.storyboard in Resources */,
 				2CD78274182F20E100CF250C /* Nell_7.jpg in Resources */,
 				2CD78262182F20CC00CF250C /* AppleDevices.plist in Resources */,
 				2CD78284182F213600CF250C /* 0001_7.png in Resources */,
+				2C86F6B41841A2AF00F4AC68 /* RightBaseMenu.storyboard in Resources */,
 				2CD78264182F20CC00CF250C /* CityPicker.plist in Resources */,
 				2CD78263182F20CC00CF250C /* Characters.plist in Resources */,
 				2CD78283182F213600CF250C /* 0001_6.png in Resources */,
 				2CD78273182F20E100CF250C /* Nell_6.jpg in Resources */,
+				2C86F6BC1841A2CC00F4AC68 /* huddlebooks_small.png in Resources */,
 				2CD78275182F20E100CF250C /* Nell_8.jpg in Resources */,
+				2C86F6BB1841A2CC00F4AC68 /* codershigh.png in Resources */,
 				2CD78281182F213600CF250C /* 0001_4.png in Resources */,
+				2C86F6B31841A2AF00F4AC68 /* LeftBaseMenu.storyboard in Resources */,
 				2CD78282182F213600CF250C /* 0001_5.png in Resources */,
 				2C843944182E7C6A00DE0B89 /* Navigation.storyboard in Resources */,
 				2CD78265182F20CC00CF250C /* Cusine.plist in Resources */,
@@ -437,9 +499,11 @@
 			files = (
 				2CD78294182F222F00CF250C /* LSPagingScrollViewController.m in Sources */,
 				2CD78298182F24F500CF250C /* LSLongContentViewController.m in Sources */,
+				2C86F6C01841A30F00F4AC68 /* LSWebViewController.m in Sources */,
 				2C84393D182E7C6A00DE0B89 /* main.m in Sources */,
 				2CD7828B182F21C700CF250C /* CutSegue.m in Sources */,
 				2CD7828E182F221300CF250C /* LSScrollViewController.m in Sources */,
+				2C86F6B11841A2AF00F4AC68 /* LSSlideMenuViewController.m in Sources */,
 				2CD78291182F222500CF250C /* LSPickerViewController.m in Sources */,
 				2CCF574C182EA4EA00A748EF /* UIViewController+Storyboard.m in Sources */,
 				2C843941182E7C6A00DE0B89 /* CHAppDelegate.m in Sources */,
