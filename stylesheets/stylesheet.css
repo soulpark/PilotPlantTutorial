@@ -80,6 +80,11 @@ h2 {
   background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
+.splitter {
+	padding-bottom: 10px;
+	background: url('../images/bg_hr.png') repeat-x bottom;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -96,6 +101,13 @@ h6 {
   font-size: 16px;
 }
 
+.black_bkg {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  background: #373737;
+  color: #fff;
+ }
+ 
 p {
   margin: 10px 0 15px 0;
 }
@@ -149,6 +161,17 @@ img {
   -moz-box-shadow: 0 0 5px #ebebeb;
   -o-box-shadow: 0 0 5px #ebebeb;
   -ms-box-shadow: 0 0 5px #ebebeb;
+}
+
+.screenshot_image
+{
+	width:30%;
+	height:auto;
+}
+
+video {
+	width:100%;
+	height:auto;
 }
 
 pre, code {
