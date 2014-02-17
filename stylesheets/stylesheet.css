@@ -512,12 +512,14 @@ Small Device Styles
   padding:1em 1em;
   margin: 1.5em 0;
   background-color:#ddd;
+  white-space: normal;
 }
 
-.code_div > p,
+
 .code_block > p {
   line-height:1.5em;
   margin:0;
+  text-indent:-1em;
 }
 
 .code {
@@ -525,9 +527,10 @@ Small Device Styles
   line-height:0.5em;
   margin:0;
 }
-
 .code_block {
-  padding-left:2em;
+  width:auto;
+  white-space: normal;
+  padding-left:2.5em;
 }
 
 
