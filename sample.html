@@ -31,7 +31,7 @@
         padding:0.5em;
       }
       ul > li {float:left;
-        margin-right:4em;
+        margin-right:2.5em;
         }
 
     </style>
@@ -64,6 +64,7 @@
             <li><a href="#s02">Note</a></li>
             <li><a href="#s03">Tip</a></li>
             <li><a href="#s04">Code</a></li>
+            <li><a href="#s05">Image</a></li>
           </ul>
       
       <h1 id="s01">1. Headline Typo</h1>
@@ -163,7 +164,7 @@
                 <p>세번째 단계 {</p>
                   <div class="code_block">
                     <p>네번째 단계</p>
-                    <p>네번째 단계 문단이 길어졌을 경우 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+                    <p>네번째 단계 코드가 길어졌을 경우 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
                   </div>
 
                 <p>} 세번째 단계</p>
@@ -181,40 +182,40 @@
 <h4>코드 사용 예제</h4>
 <div class="codeView">
   <xmp>
-    <div class="code_div">
-      <p>{</p>
-        <div class="code_block">
-          <p><span class="code_emerald">첫번째</span> 단계</p>
-          <p><span class="code_blue">첫번째</span> 단계</p>
-          <p>첫번째 <span class="code_red">단계</span></p>
-          <p>첫번째 단계 { </p>
-          
+<div class="code_div">
+  <p>{</p>
+    <div class="code_block">
+      <p><span class="code_emerald">첫번째</span> 단계</p>
+      <p><span class="code_blue">첫번째</span> 단계</p>
+      <p>첫번째 <span class="code_red">단계</span></p>
+      <p>첫번째 단계 { </p>
+      
+      <div class="code_block">
+        <p>두번째 단계</p>
+        <p>두번째 단계 {</p>
+      
           <div class="code_block">
-            <p>두번째 단계</p>
-            <p>두번째 단계 {</p>
-          
+            <p>세번째 단계 {</p>
+      
               <div class="code_block">
-                <p>세번째 단계 {</p>
-          
-                  <div class="code_block">
-                    <p>네번째 단계</p>
-                  </div>
-
-                <p>} 세번째 단계</p>
-                <p>세번째 단계</p>
-          
+                <p>네번째 단계</p>
               </div>
 
-            <p>} 두번째 단계</p>
-            <p>두번째 단계</p>
-            
+            <p>} 세번째 단계</p>
+            <p>세번째 단계</p>
+      
           </div>
-          
-          <p>} 첫번째 단계</p>
+
+        <p>} 두번째 단계</p>
+        <p>두번째 단계</p>
         
-        </div>
-      <p>}</p>
-  </div>  
+      </div>
+      
+      <p>} 첫번째 단계</p>
+    
+    </div>
+  <p>}</p>
+</div>  
   </xmp>
 </div>
 
@@ -269,6 +270,104 @@ css 파일 내의 폰트 경로를 수정해야 함.</p>
     </tr>
   </table>
 
+
+  <h1 id="s05">5. Image</h1>
+  <h3>5-1. 정렬</h3>
+  <div class="preView">
+  <div class="img_div img_width30 img_left">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">(1) 왼쪽 정렬</p>
+  </div>
+  <br style="clear:both;" />
+  <div class="img_div img_width30 img_center">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">(2) 가운데 정렬</p>
+  </div>
+  <br style="clear:both;" />
+  <div class="img_div img_width30 img_right">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">(3) 오른쪽 정렬</p>
+  </div>
+  <br style="clear:both;" />
+  </div>
+
+ 
+
+
+  <h3>5-2. 크기</h3>
+  <div class="preView">
+  <div class="img_div img_width20 img_left">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">이미지 크기 20%</p>
+  </div>
+  <br style="clear:both;" />
+  <div class="img_div img_width40 img_left">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">이미지 크기 40%</p>
+  </div>
+  <br style="clear:both;" />
+  <div class="img_div img_width60 img_left">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">이미지 크기 60%</p>
+  </div>
+  <br style="clear:both;" />
+  <div class="img_div img_width80 img_left">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">이미지 크기 80%</p>
+  </div>
+  <br style="clear:both;" />
+  <div class="img_div img_width950 img_left">
+    <img src="sample-img.jpg" />
+    <p class="img_caption">이미지 크기 95%</p>
+  </div>
+  <br style="clear:both;" />
+  </div>
+
+  <h4>코드 사용 예제</h4>
+<div class="codeView">
+  <xmp>
+<div class="img_div 사이즈클래스 정렬클래스">
+  <img src="이미지 경로" alt="이미지 설명" />
+  <p class="img_caption">이미지 캡션</p>
+</div>
+
+<!-- 캡션유무는 옵션. 
+이미지 상단에 위치하려면 <img> 태그 전에 입력하면 됨. -->
+
+
+예) 가로사이즈50% / 가운데정렬
+<div class="img_div img_width50 img_center">
+  <img src="sample-img.jpg" alt="이미지샘플" />
+  <p class="img_caption">가로사이즈 50%의 가운데 정렬 이미지</p>
+</div>    
+  </xmp>
+</div>
+
+     <h4>정렬 클래스 목록</h4>
+        <table>
+          <tr>
+            <td style="color:navy; text-align:center; font-weight:bold;">정렬구분</td>
+            <td style="color:navy; text-align:center; font-weight:bold;">클래스명</td>
+          </tr>
+          <tr>
+            <td>왼쪽정렬</td>
+            <td>.img_left</td>
+          </tr>
+          <tr>
+            <td>가운데정렬</td>
+            <td>.img_center</td>
+          </tr>
+          <tr>
+            <td>오른쪽정렬</td>
+            <td>.img_right</td>
+          </tr>
+        </table>
+    
+    <h4><br />사이즈 클래스 명</h4>
+    <p style="font-size:1.5em">.img_width + 사이즈%</p>
+    <p>예) 가로사이즈 50%의 클래스명 : <span class="code_red" style="font-size:1.3em;">.img_width50</span></p>
+    <p>사이즈%는 10~100범위의 숫자로 5단위로 설정되어 있음.<br />
+    (10, 15, 20, ... 95, 100)</p>
 
       </section>
     </div>
