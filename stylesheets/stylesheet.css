@@ -4,6 +4,7 @@ by Jason Costello, @jsncostello
 *******************************************************************************/
 
 @import url(pygment_trac.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -62,14 +63,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 1em 0 0.5em;
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
+  clear:both;
 }
 
 h1 {
+  margin: 2em 0 0.5em;
   font-size: 36px;
   font-weight: 700;
 }
@@ -133,7 +136,7 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus { border-bottom: 1px dotted #007edf;}
 
 footer a {
   color: #F2F2F2;
@@ -153,7 +156,7 @@ img {
   margin: 0 auto;
   max-width: 739px;
   padding: 5px;
-  margin: 10px 0 10px 0;
+  margin: 0;
   border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
@@ -439,4 +442,149 @@ Small Device Styles
     font-size: 11px;
   }
 
+  .video {
+    width:100%;
+    max-width:480px;
+    margin:auto 0 auto 0;
+  }
+
+  .img_center, .img_left, .img_right {
+    position:relative; margin-left:auto; margin-right:auto;
+  }
+  
+  .img_width10,.img_width15,.img_width20,
+  .img_width25,.img_width30,.img_width35,
+  .img_width40,.img_width45,.img_width50,
+  .img_width55,.img_width60,.img_width65,
+  .img_width70,.img_width75,.img_width80,
+  .img_width85,.img_width90,.img_width95,
+  .img_width100 { width:100%; }
+
+}
+
+
+
+
+
+/* Customizing */
+
+/* Note And Tip */
+
+.note_div, .tip_div {
+  -webkit-border-radius:1em;
+  box-shadow:2px 2px 0px #aaa;
+  padding:1em;
+  margin: 1.5em 0;
+}
+
+.note_div {
+  background-color:#cce8bf;
+  border:1px solid #bcdcab;
+  border-top:10px solid #bcdcab;
+  border-bottom:10px solid #bcdcab;
+}
+
+.note_title {
+  color:#202a5d;
+  text-shadow:1px 1px 0px #d5fac1;
+  margin:0;
+}
+
+
+.tip_div {
+  background-color:#fbfbfb; 
+  border:1px solid #ddd;
+  border-top:10px solid #ddd;
+  border-bottom:10px solid #ddd;
+}
+
+.tip_title {
+  color:#123381;
+  text-shadow:1px 1px 0px #c4e5fe;
+  margin:0;
+}
+
+
+
+/* Code */
+
+.code_div {
+  -webkit-border-radius:1em;
+  padding:1em 1em;
+  margin: 1.5em 0;
+  background-color:#ddd;
+}
+
+.code_div > p,
+.code_block > p {
+  line-height:1.5em;
+  margin:0;
+}
+
+.code {
+  font-family:'Nanum Gothic Coding', sans-serif;
+  line-height:0.5em;
+  margin:0;
+}
+
+.code_block {
+  padding-left:2em;
+}
+
+
+
+.code_red { color: #C41A16; }
+.code_violet {  color: #5c2699; }
+.code_navy {  color: #2E0D6E;}
+.code_blue {  color: #0000FF;}
+.code_emerald { color: #3F6E74; }
+.code_darkemerald {   color: #26474B; }
+.code_redbrown {  color: #AA0D91; }
+.code_brown {   color: #891315; }
+.code_green {   color: #236E25; }
+.code_lightbrown {    color: #683821; }
+.code_caption {
+  font-size:11px;
+  text-align:left;
+  margin-bottom:5px;
+}
+.code_narrow {
+  letter-spacing:0px;
+}
+
+
+
+/* Image */
+img { width:100%;  }
+.img_div { margin:0.5em 0;}
+
+.img_center { position:relative; margin-left:auto; margin-right:auto;}
+.img_left { position:relative; float:left; margin-right:1.2em; margin-top:0.2em;}
+.img_right { position:relative; float:right; margin-left:1.5em;margin-top:0.2em;}
+
+.img_width100 { width:100%; }
+.img_width95 { width:95%; }
+.img_width90 { width:90%; }
+.img_width85 { width:85%; }
+.img_width80 { width:80%; }
+.img_width75 { width:75%; }
+.img_width70 { width:70%; }
+.img_width65 { width:65%; }
+.img_width60 { width:60%; }
+.img_width55 { width:55%; }
+.img_width50 { width:50%; }
+.img_width45 { width:45%; }
+.img_width40 { width:40%; }
+.img_width35 { width:35%; }
+.img_width30 { width:30%; }
+.img_width25 { width:25%; }
+.img_width20 { width:20%; }
+.img_width15 { width:15%; }
+.img_width10 { width:10%; }
+.img_caption {
+  font-size:0.8em;
+  text-align:left;
+  margin-top:0;
+  margin-bottom:5px;
+  padding-left:5px;
 }

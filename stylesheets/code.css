@@ -1,0 +1,49 @@
+@font-face{
+font-family: nanum coding;
+font-weight:normal;
+font-style:normal;
+src:url("NanumGothic_Coding.ttf");
+}
+@font-face{
+font-family: nanum coding;
+font-weight:bold;
+letter-spacing:-0.1em;
+src:url("NanumGothic_Coding_Bold.ttf");
+}
+
+.code_div {
+	padding: 1.5em;
+	margin:5px 0 15px 0;
+	background-color:#ebebeb;
+	line-height:1.1em;
+	font-family:'nanum coding', sans-serif;
+
+	font-size:0.8em;
+	letter-spacing:0.08em;
+	color: black;
+}
+
+.code_block {
+	padding-left:2em;
+}
+
+
+
+.code_red { color: #C41A16; }
+.code_violet {	color: #5c2699; }
+.code_navy {	color: #2E0D6E;}
+.code_blue {	color: #0000FF;}
+.code_emerald { color: #3F6E74; }
+.code_darkemerald {		color: #26474B;	}
+.code_redbrown {	color: #AA0D91;	}
+.code_brown {		color: #891315;	}
+.code_green {		color: #236E25; }
+.code_lightbrown {		color: #683821; }
+.code_caption {
+	font-size:11px;
+	text-align:left;
+	margin-bottom:5px;
+}
+.code_narrow {
+	letter-spacing:0px;
+}
