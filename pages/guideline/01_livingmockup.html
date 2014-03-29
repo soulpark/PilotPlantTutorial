@@ -29,57 +29,141 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         
-        <h3>1. 프로젝트 준비하기 </h3>
-        <div class="preView">
+        <h2>1. 프로젝트 준비하기 </h2>
+        
+        <p>목업 스케치를 준비합니다. 손으로 그린 그림이지만 화면 비율과 맞아야 하므로 가급적 목업 스케치 템플리트를 이용해 그림을 그리고 스캔합니다. 스캐너가 없다면 iOS 용 앱 중 사진 찍은 뒤 문서를 보정해주는 앱을 이용합니다. 여기에서는 320*568을 기준으로 목업 스케치 이미지를 제작했지만, 원한다면 레티나 해상도에 대응 가능한 640*1136으로 제작할 수 있습니다. </p>
 		<div class="img_div img_width80 img_left">
-		<p>목업 스케치를 준비합니다. 손으로 그린 그림이지만 화면 비율과 맞아야 하므로 가급적 목업 스케치 템플리트를 이용해 그림을 그리고 스캔합니다. 스캐너가 없다면 iOS 용 앱 중 사진 찍은 뒤 문서를 보정해주는 앱을 이용합니다. 여기에서는 320*568을 기준으로 목업 스케치 이미지를 제작했지만, 원한다면 레티나 해상도에 대응 가능한 640*1136으로 제작할 수 있습니다. </p>
 		  <img src="./01_images/1_MockUpSketches.png" />
 		  <p class="img_caption">목업 스케치를 준비합니다.</p>
 		</div>
 		<br style="clear:both;" />
 		
-		<div class="img_div img_width80 img_left">
 		<p>Welcome to Xcode 화면에서 "Create a New Xcode Project"를 선택하거나 File 메뉴에서 New Project 메뉴를 통해 새로운 프로젝트를 생성합니다.</p>
+		<div class="img_div img_width80 img_left">
 		  <img src="./01_images/2_Welcome Screen.png" />
 		  <p class="img_caption">New Projet 선택 </p>
 		</div>
 		<br style="clear:both;" />
 
-		<div class="img_div img_width80 img_left">
 		<p>프로젝트 템플리트 선택 화면에서 PilotPlant를 선택하고 Next를 누릅니다. </p>
+		<div class="img_div img_width80 img_left">
 		  <img src="./01_images/3_ProjectTemplate.png" />
 		  <p class="img_caption">Pilot Plant 선택 </p>
 		</div>
 		<br style="clear:both;" />
 		
-		<div class="img_div img_width80 img_left">
 		<p>프로젝트 이름을 줍니다. 여기에서는 Living MockUp 이라는 이름을 줬습니다. </p>
+		<div class="img_div img_width80 img_left">
 		  <img src="./01_images/4_ProjectNaming.png" />
 		  <p class="img_caption">프로젝트 이름을 줍니다. </p>
 		</div>
 		<br style="clear:both;" />
 		
-		<div class="img_div img_width80 img_left">
 		<p>목업 스케치들을 ImageAsset으로 더합니다. 아래와 같은 그림이 나옵니다. 원한다면 @2x 이미지를 추가할 수 있습니다. </p>
+		<div class="img_div img_width80 img_left">
 		  <img src="./01_images/5_AddImagesToImageAssets.png" />
 		  <p class="img_caption">ImageAsset으로 목업 스케치를 추가합니다. </p>
 		</div>
 		<br style="clear:both;" />
 		
-		<div class="img_div img_width80 img_left">
 		<p>1번 이미지를 '미디어 라이브러리'로부터 뷰 오브젝트 위로 드래그 앤 드랍해서 넣습니다. 위치를 맞추어 화면에 가득 차게 합니다. </p>
+		<div class="img_div img_width80 img_left">
 		  <img src="./01_images/6_AddImage.png" />
 		  <p class="img_caption">1번 그림을 추가합니다. </p>
 		</div>
 		<br style="clear:both;" />
 
-		<div class="img_div img_width80 img_left">
 		<p>윈도우의 왼쪽 상단에서 iPhone Retina (4-inch)가 선택되어 있는지 확인한 뒤 Run 버튼을 눌러 실행합니다. </p>
+		<div class="img_div img_width40 img_left">
 		<img src="./01_images/7_Run.png" />
 		<p class="img_caption">실행해 봅니다. </p>
 		</div>
 		<br style="clear:both;" />
+		
+		
+		<h2>2. 네비게이션 추가하기 </h2>
+		<p>이제 네비게이션을 추가해 보겠습니다. 네비게이션을 위해서는 두개의 뷰 컨트롤러가 필요합니다. </p>		
+		<p>오브젝트 라이브러리에서 뷰 컨트롤러 오브젝트를 캔바스로 추가합니다. 두 번째 이미지를 추가한 뷰 컨트롤러에 넣습니다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/8_SecondViewController.png" />
+		<p class="img_caption">뷰 컨트롤러를 추가하고 두 번째 이미지를 넣습니다. </p>
 		</div>
+		<br style="clear:both;" />
+		
+		
+		<p>첫 번째 뷰 컨트롤러에 버튼 오브젝트를 추가합니다. 추가한 버튼을 선택한 뒤 키보드에서 컨트롤 키를 누르고 두 번째 뷰 컨트롤러로 드래그 앤 드롭하면 세그웨이 연결 HUD 창이 나타납니다. push를 선택합니다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/9_PushConnection.png" />
+		<p class="img_caption">push 세그웨이 연결을 만듭니다. </p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<p>연결 결과는 다음과 같습니다. 세그웨이를 선택하면 그 세그웨이를 동작시키는 버튼이 하일라이트 됩니다. 버튼의 타이틀을 지워서 버튼이 화면에 전혀 보이지 않더라도 동작에는 문제가 없으니 버튼 타이틀을 지우는 게 좋겠죠? </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/10_PushResult.png" />
+		<p class="img_caption">push 세그웨이 연결 결과. </p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<p>Run 버튼으로 실행해 봅니다. 버튼을 누르면 네비게이션이 될까요?</p>
+		<p>아쉽게도 앱이 죽어버리는 군요. 무엇을 잘 못 한 걸까요?</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/11_PushError.png" />
+		<p class="img_caption">앱은 정상 동작하지 않고 크래시 납니다. </p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>네비게이션을 위해서는 네비게이션 컨트롤러가 필요합니다. 그림과 같이 첫 번째 뷰를 선택한 상태에서  Editor 메뉴에서 Embed in Navigation Controller 메뉴를 선택합니다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/12_EmbedNavigationController.png" />
+		<p class="img_caption">Embed in Navigation Controller를 이용해 네비게이션 추가하기</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>이대로 실행하면, 반투명한 네비게이션 바가 생겨서 목업 스케치의 윗 부분을 덮어 버립니다. 네비게이션바도 목업 스케치 그림에 포함되어 있으므로 네비게이션 바를 숨기는 게 더 좋을 것 같습니다. 캔바스의 왼쪽에 새로 생긴 네비게이션 컨트롤러를 선택한 뒤 애트리뷰트 인스펙터에서 'Shows Navigation Bar' 체크박스를 해제합니다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/13_HideNavigationBar.png" />
+		<p class="img_caption">네비게이션 바 숨기기</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>실행해 봅니다. 우리가 버튼을 올릴 영역을 탭하면 네비게이션 되면서 두 번째 뷰가 나타나는 것을 볼 수 있습니다.</p>
+		<div class="img_div img_width40 img_left">
+		<img src="./01_images/7_Run.png" />
+		<p class="img_caption">네비게이션이 정상적으로 동작합니다.</p>
+		</div>
+		<div class="img_div img_width40 img_right">
+		<img src="./01_images/14_FirstNavigation.png" />
+		</div>
+		<br style="clear:both;" />
+		
+		<p>축하합니다. 첫 번째 움직이는 목업 프로젝트를 만들었습니다. </p>
+		
+		<h2>3. Appear 세그웨이 선택하기 </h2>
+		
+		<p>하지만, 우리의 목업 스케치상의 동작방식을 생각해 볼 때 push 방식의 뷰 전환은 적당하지 않아 보입니다.  "최근 업데이트" 영역이 확장되면서 "이슈 인기도"와 "내 관심 이슈"가 나타나야 하는데, 현재로선 원하는 애니메이션을 그대로 구현하기는 어려우니 차라리 push 효과 없이 장면이 변경되는 것이 더 낫겠죠.</p>
+		
+		<p>push 세그웨이 연결을 삭제하고 다시 연결을 시도합니다. 컨트롤 키를 누른 상태에서 버튼에서 목표로 하는 뷰 컨트롤러로 드래그 앤 드롭한 뒤, 세그웨이 HUD가 나타나면 'appear'를 선택합니다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/15_AppearConnection.png" />
+		<p class="img_caption">push 세그웨이 삭제 후 appear 세그웨이 연결</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>appear 세그웨이를 선택하고 애트리뷰트 인스펙터를 보면 다음 그림과 같이 'Custom' 스타일의 'AppearSegue' 세그웨이 클래스인 것을 확인 할 수 있습니다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/15_AppearConnection.png" />
+		<p class="img_caption">appear 세그웨이의 정보 확인</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>실행해 봅시다. 버튼 영역을 탭 하면 애니메이션 효과 없이 그림이 바뀌는 것을 확인할 수 있습니다. 원하는 애니메이션 효과를 정확히 구현할 수 없다면 이렇게 appear 장면전환을 하는 게 낫습니다. 즁간 단계를 만들어 주면 보다 자세하게 내가 원하는 장면 전환을 전달할 수 있습니다.</p>
+		
+		
+		<h2>4. 모달 추가하기 </h2>
+		
 		
       </section>
     </div>
