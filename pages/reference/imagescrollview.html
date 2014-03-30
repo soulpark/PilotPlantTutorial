@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PrototypeSample : Create iOS app prototype using Xcode Storyboard" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>PrototypeOnXcode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CodersHigh/PrototypeSample">View on GitHub</a>
+
+          <h1 id="project_title">Prototype On Xcode</h1>
+          <h2 id="project_tagline">Create iOS app prototype using Xcode Storyboard</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1><a name="WebPageLoading" class="anchor" href="#webpage"><span class="octicon octicon-link"></span></a>큰 이미지 표시하기</h1>
+		
+		<p>레퍼런스를 확인할 수 있는 샘플 프로젝트를 제공해 드리고 있습니다. 샘플 프로젝트를 이용해 기능과 동작을 확인하신 후 직접 만들어 보시기 바랍니다.</p>
+		
+		<p>큰 이미지를 표시하려면 스크롤 뷰 안에 이미지 뷰를 넣고 이미지의 크기에 따라 스크롤 뷰의 설정을 해 줘야 합니다. CHImageScrollViewController를 이용하면 이미지 이름을 입력하는 것 만으로 이미지가 스크롤 되도록 할 수 있습니다.</p>
+
+		<p>실행할 스토리보드 파일을 선택합니다. 프로젝트 타겟의 General 설정사항 중 Main Interface에 ImageScrollView 스토리보드를 선택합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./imagescrollview_images/1_storyboard_setting.png" />
+		  <p class="img_caption">ImageScrollView 스토리보드를 선택합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>뷰 컨트롤러의 이름을 CHImageScrollViewController로 변경한 뒤, User Defined Runtime Attributes 항목에 'imageName' 키를 만들고 원하는 이미지 이름을 입력합니다. 사용가능한 이미지 타입은 png 입니다. 샘플에서는 AppDesignWorkshop.png 파일을 이용했습니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./imagescrollview_images/2_imagename_setting.png" />
+		  <p class="img_caption">CHImageScrollViewController에 이미지 이름을 입력합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 지정한 이미지가 스크롤 되는 것을 확인할 수 있습니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./imagescrollview_images/3_imagescroll_result.png" />
+		  <p class="img_caption">큰 이미지가 스크롤됩니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PrototypeSample maintained by <a href="http://codershigh.github.io/">CodersHigh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

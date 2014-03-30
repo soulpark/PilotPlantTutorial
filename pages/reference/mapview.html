@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PrototypeSample : Create iOS app prototype using Xcode Storyboard" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>PrototypeOnXcode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CodersHigh/PrototypeSample">View on GitHub</a>
+
+          <h1 id="project_title">Prototype On Xcode</h1>
+          <h2 id="project_tagline">Create iOS app prototype using Xcode Storyboard</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1><a name="WebPageLoading" class="anchor" href="#webpage"><span class="octicon octicon-link"></span></a>지도 표시하기</h1>
+		
+		<p>레퍼런스를 확인할 수 있는 샘플 프로젝트를 제공해 드리고 있습니다. 샘플 프로젝트를 이용해 기능과 동작을 확인하신 후 직접 만들어 보시기 바랍니다.</p>
+		
+		<p>지도는 맵 뷰를 통해 손 쉽게 표시할 수 있습니다. CHMapViewController를 이용하면 프로토타입 구동 중 원하는 지역의 지도를 표시할 수 있으며, 확대나 축소도 가능합니다.</p>
+
+		<p>실행할 스토리보드 파일을 선택합니다. 프로젝트 타겟의 General 설정사항 중 Main Interface에 MapView 스토리보드를 선택합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./mapview_images/1_storyboard_setting.png" />
+		  <p class="img_caption">MapView 스토리보드를 선택합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>뷰 컨트롤러의 이름을 CHMapViewController로 변경합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./mapview_images/2_mapviewcontroller.png" />
+		  <p class="img_caption">CHMapViewController를 만듭니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 기본 위치의 지도가 나타나는 것을 확인할 수 있습니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./mapview_images/3_defaultlocation.png" />
+		  <p class="img_caption">기본 설정된 위치의 지도가 나타납니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<p>CHMapViewController에 값을 설정하면 원하는 위치의 지도를 표시할 수 있습니다. User Defined Runtime Attributes 항목에 'mapCenter' 키를 만들고 타입을 'Point'로 정성한 뒤 원하는 위치의 위도와 경도를 입력합니다. 위도와 경도는 구글 맵 등의 지도 웹 사이트를 통해 얻을 수 있습니다. 'mapSize' 키를 만들고 타입을 'Size'로 정성한 뒤 표시하길 원하는 영역을 입력합니다.</p>
+		<p>여기에서는 mapCenter에 {37.398613, 127.116405}을, mapSize에 {0.005, 0.005}를 입력했다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./mapview_images/4_locationsetting.png" />
+		  <p class="img_caption">CHMapViewController에 지도의 위치와 범위를 입력한다. </p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 원하는 위치와 크기의 지도가 로딩되는 것을 확인할 수 있습니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./mapview_images/5_customlocation.png" />
+		  <p class="img_caption">원하는 위치와 크기의 지도가 로드 되었습니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PrototypeSample maintained by <a href="http://codershigh.github.io/">CodersHigh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
