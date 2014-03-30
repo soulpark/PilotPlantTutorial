@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PrototypeSample : Create iOS app prototype using Xcode Storyboard" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>PrototypeOnXcode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CodersHigh/PrototypeSample">View on GitHub</a>
+
+          <h1 id="project_title">Prototype On Xcode</h1>
+          <h2 id="project_tagline">Create iOS app prototype using Xcode Storyboard</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1><a name="WebPageLoading" class="anchor" href="#webpage"><span class="octicon octicon-link"></span></a>웹 페이지 로딩하기</h1>
+		
+		<p>레퍼런스를 확인할 수 있는 샘플 프로젝트를 제공해 드리고 있습니다. 샘플 프로젝트를 이용해 기능과 동작을 확인하신 후 직접 만들어 보시기 바랍니다.</p>
+		
+		<p>웹 뷰는 웹 페이지를 로드할 수 있는 뷰 입니다. CHWebViewController를 이용하면 프로토타입 구동 중 원하는 웹 페이지나 pdf 파일을 화면에 표시할 수 있습니다.</p>
+
+		<p>실행할 스토리보드 파일을 선택합니다. 프로젝트 타겟의 General 설정사항 중 Main Interface에 WebView 스토리보드를 선택합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./webview_images/1_storyboard setting.png" />
+		  <p class="img_caption">WebView 스토리보드를 선택합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>뷰 컨트롤러의 이름을 CHWebContentViewController로 변경한 뒤, User Defined Runtime Attributes 항목에 'URL' 키를 만들고 원하는 웹 주소를 입력합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./webview_images/2_webview setting.png" />
+		  <p class="img_caption">CHWebContentViewController에 URL을 입력합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 지정한 웹 페이지가 로딩되는 것을 확인할 수 있습니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./webview_images/3_webview result.png" />
+		  <p class="img_caption">codershigh.com 웹 페이지가 로드 되었습니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<h1><a name="PDFFileLoading" class="anchor" href="#pdffile"><span class="octicon octicon-link"></span></a>pdf 파일 로딩하기</h1>
+		
+		<p>뷰 컨트롤러의 이름을 CHWebContentViewController로 변경한 뒤, User Defined Runtime Attributes 항목에 'fileNameExt' 키를 만들고 원하는 파일의 이름을 입력합니다. 파일은 프로젝트에 추가되어 있어야 합니다.</p>
+		<p>제공되는 샘플 프로젝트에서 첫 화면 화살표를 두번째 씬으로 옮겨서 바로 실행해 볼 수 있습니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./webview_images/4_ pdf setting.png" />
+		  <p class="img_caption">CHWebContentViewController에 파일이름과 확장자를 입력합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 지정한 pdf 파일이 로딩되는 것을 확인할 수 있습니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./webview_images/5_pdf result.png" />
+		  <p class="img_caption">선택한 pdf 파일이 로드 되었습니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PrototypeSample maintained by <a href="http://codershigh.github.io/">CodersHigh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

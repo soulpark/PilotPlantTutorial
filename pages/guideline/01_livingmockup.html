@@ -28,6 +28,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+      
+        <iframe class="video" src="//www.youtube.com/embed/J_MlY6egVx0" frameborder="0" allowfullscreen></iframe>
+        <p class="img_caption">이 튜토리얼을 통해 만든 프로토타입.</p>
         
         <h2>1. 프로젝트 준비하기 </h2>
         
@@ -196,12 +199,51 @@
 		<p>모달은 큰 테스크의 흐름 중에 작은 테스크를 완료해야 하는 경우 주로 사용합니다. 그러므로 모달을 거치면 뷰가 변경됩니다. 연락처에 새로운 사람을 추가하거나, 캘린더에 일정을 추가하는 경우를 생각해 보면 모달이 올라갈 때의 뷰와 모달이 내려온 뒤의 뷰는 다릅니다. 우리의 목업 스케치 상에서도 마찬가지여서, 모달로 올라온 씬에서 뉴스의 카테고리를 선택하면 모달이 내려왔을 때, 해당 카테고리의 뉴스 목록이 나타나야 합니다.</p>
 		
 		
-		<p>Run 버튼을 눌러 실행해 보면, 모달이 올라오는 것을 확인할 수 있습니다. 하지만 모달을 내리는 버튼이 동작하지 않기 때문에 원래의 씬으로 돌아갈 수 없습니다. 아래 그림과 같이 모달로 올라오는 세번째 씬에 버튼을 추가한 뒤, 키보드 컨트롤 키를 누른 상태로 그 버튼에서 씬의 뷰 컨트롤러 오브젝트로 연결합니다. HUD에서 Event 중 'modalDismiss:'를 선택합니다.</p>
+		<p>아래 그림과 같이 모달 디스미스시에 나타날 씬을 구성합니다. 뷰 컨트롤러를 하나 추가하고 네 번째 그림을 추가합니다. 버튼을 하나 숨겨둡니다. 이 버튼은 탭을 통해 동작하는 게 아니라 숨겨진 코드를 통해 자동으로 동작합니다. appear 세그웨이로 연결하면 됩니다.</p> 
+		<p>세그웨이의 아이덴티티를 'ModalDismissPush'라고 지정합니다. </p>
 		<div class="img_div img_width80 img_left">
-		<img src="./01_images/19_ModalDismissConnection.png" />
-		<p class="img_caption">모달 디스미스 연결</p>
+		<img src="./01_images/20_DismissPudhViewAdded.png" />
+		<p class="img_caption">모달 디스미스시 나타날 씬 만들고 'ModalDismissPush'세그웨이 연결</p>
 		</div>
 		<br style="clear:both;" />
+		
+		<p>모달 씬에 버튼을 하나 추가한 뒤 뷰 컨트롤러의 'modalDismissPush:' 이벤트로 연결합니다. </p> 
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/21_DismissPushConnection.png" />
+		<p class="img_caption">모달씬에서 버튼 생성하고 'modalDismissPush:'로 연결</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행합니다. 모달이 올라왔을 때 '사회' 영역의 버튼을 탭하면, 모달이 내려가면서 다음 씬인 사회 카테고리의 뉴스가 나오는 것을 확인할 수 있습니다.</p>
+		
+		
+		<h2>5. 흐름의 완성 </h2>
+		
+		<p>아래 그림과 같이 전체 흐름을 완성해 봅시다. 네번째 씬과 다섯번째 씬은 appear 세그웨이로 연결되며,  다섯번째 씬과 여섯번째 씬은 push 세그웨이로 연결됩니다. </p> 
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/22_FlowComplete.png" />
+		<p class="img_caption">다섯번째와 여섯번째 씬을 추가해서 전체 흐름을 완성</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>현재 네비게이션 바가 없어서 back 버튼을 제공받지 못합니다. 그로므로 우리가 back 버튼을 직접 만들어 보겠습니다. 여섯번째 씬에서 back 버튼 그림 위에 버튼을 올리고 뷰 컨트롤러의 'navigationBack:' 이벤트로 연결합니다.</p> 
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/23_BackConnection.png" />
+		<p class="img_caption">back 버튼을 'navigationBack:' 이벤트로 연결</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>이제 뒤로가기 기능까지 지원하는 프로토타입이 완성되었습니다. </p> 
+		
+		<p>전체 스토리보드 흐름은 아래와 같습니다.</p> 
+		<div class="img_div img_width80 img_left">
+		<img src="./01_images/24_FinalFlow.png" />
+		<p class="img_caption">전체 스토리보드 흐름</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<p>지금까지 손으로 그린 목업 스케치를 이용해 프로토타입을 만드는 방법을 알아봤습니다. 다음 단계는 OS의 기본 인터페이스 요소들을 사용해서 보다 효율적이고 깔끔한 프로토타입을 만들어 보겠습니다. </p>
 		
       </section>
     </div>
