@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PrototypeSample : Create iOS app prototype using Xcode Storyboard" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>PrototypeOnXcode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CodersHigh/PrototypeSample">View on GitHub</a>
+
+          <h1 id="project_title">Prototype On Xcode</h1>
+          <h2 id="project_tagline">Create iOS app prototype using Xcode Storyboard</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1><a name="WebPageLoading" class="anchor" href="#webpage"><span class="octicon octicon-link"></span></a>긴 콘텐트 표시하기</h1>
+		
+		<p>레퍼런스를 확인할 수 있는 샘플 프로젝트를 제공해 드리고 있습니다. 샘플 프로젝트를 이용해 기능과 동작을 확인하신 후 직접 만들어 보시기 바랍니다.</p>
+		
+		<p>콘텐트 스크롤 뷰는 하나의 긴 콘텐트를 표시할 수 있는 뷰 입니다. 테이블 뷰 사용이 적합하지 않는 긴 콘텐트를 만들 때 CHContentScrollViewController와 별도의 xib 파일을 이용하면 쉽게 긴 콘텐트 뷰를 스크롤할 수 있습니다.</p>
+
+		<p>실행할 스토리보드 파일을 선택합니다. 프로젝트 타겟의 General 설정사항 중 Main Interface에 LongContent 스토리보드를 선택합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./contentscroll_images/1_storyboard_setting.png" />
+		  <p class="img_caption">LongContent 스토리보드를 선택합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>뷰 컨트롤러의 속성을 CHContentScrollViewController로 변경한 뒤, User Defined Runtime Attributes 항목에 'xibName' 키를 만들고 로드할 xib 파일의 이름을 입력합니다. 여기에서는 'DailyPlan'이라는 xib를 사용할 것입니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./contentscroll_images/2_contentscroll.png" />
+		  <p class="img_caption">CHContentScrollViewController를 설정합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>아래 그림과 같이 xib 파일을 하나 만들고 이름을 'DailyPlan.xib'라고 줍니다. xib내에서 뷰의 크기는 'Simulated Metrics'의 'Size' 항목을 'Freeform'으로 선택하면 얼마든지 크게 만들 수 있습니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./contentscroll_images/3_xib_compose.png" />
+		  <p class="img_caption">xib 파일을 만들고 구성합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 큰 xib 파일이 스크롤 되는 것을 확인할 수 있습니다. 텍스트 필드의 경우, 포커스가 가면 키보드가 올라오기 때문에 키보드에 가려지는 영역이 있습니다. 키보드의 크기를 계산해서 해당 텍스트 필드가 가려지지 않도록 하는 기능이 기본적으로 제공됩니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./contentscroll_images/4_run_result.png" />
+		  <p class="img_caption">긴 콘텐트가 표시됩니다. 키보드에서 리턴키를 입력하면 자동으로 스크롤 됩니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PrototypeSample maintained by <a href="http://codershigh.github.io/">CodersHigh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

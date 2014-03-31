@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PrototypeSample : Create iOS app prototype using Xcode Storyboard" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>PrototypeOnXcode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/CodersHigh/PrototypeSample">View on GitHub</a>
+
+          <h1 id="project_title">Prototype On Xcode</h1>
+          <h2 id="project_tagline">Create iOS app prototype using Xcode Storyboard</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1><a name="WebPageLoading" class="anchor" href="#webpage"><span class="octicon octicon-link"></span></a>페이징 표시하기</h1>
+		
+		<p>레퍼런스를 확인할 수 있는 샘플 프로젝트를 제공해 드리고 있습니다. 샘플 프로젝트를 이용해 기능과 동작을 확인하신 후 직접 만들어 보시기 바랍니다.</p>
+		
+		<p>페이징 뷰는 여러개의 뷰를 좌우로 넘겨가며 볼 수 있는 뷰 입니다. 동일한 여러장의 이미지를 준비하고 CHPagingScrollViewController를 이용하면 쉽게 페이징 뷰를 표시할 수 있습니다.</p>
+
+		<p>실행할 스토리보드 파일을 선택합니다. 프로젝트 타겟의 General 설정사항 중 Main Interface에 PagingScroll 스토리보드를 선택합니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./pagingscroll_images/1_storyboard_setting.png" />
+		  <p class="img_caption">PagingScroll 스토리보드를 선택합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>페이징에 사용할 이미지를 준비합니다. 이미지는 가능한 동일한 사이즈를 가지고 있으면 좋으며, 종횡비가 같아야 합니다. 파일이름을 동일하게 하고, 페이지 순서를 '파일이름_x.png'의 형식으로 지정합니다. png 확장자의 이미지만 사용가능 합니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./pagingscroll_images/2_page_image.png" />
+		  <p class="img_caption">페이징에 사용할 이미지를 준비합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>뷰 컨트롤러의 속성을 CHPagingScrollViewController로 변경한 뒤, User Defined Runtime Attributes 항목에 'imageBaseName' 키를 만들고 이미지의 이름 중 순서를 제외한 부분을 입력합니다. 총 페이지 개수와 현재 페이지를 알려주는 페이지 컨트롤이 보다 잘 보이도록 배경을 검은색으로 변경했습니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./pagingscroll_images/3_page_scroll_view.png" />
+		  <p class="img_caption">CHPagingScrollViewController를 설정합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>Run 버튼을 눌러 실행해 보면, 이미지가 페이징 되는 것을 확인할 수 있습니다. 이미지 페이징에 따라 페이지 컨트롤에 반영됩니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./pagingscroll_images/4_paging_result.png" />
+		  <p class="img_caption">페이징 뷰가 완성 되었습니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>추가적인 애트리뷰트를 제공하면 보다 섬세한 페이징 뷰를 만들 수 있습니다. User Defined Runtime Attributes 항목에 'pageWidth', 'pageHeight', 'pageWidth' 키를 만들고 각 각 원하는 정보를 입력합니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./pagingscroll_images/5_additional_attributes.png" />
+		  <p class="img_caption">CHPagingScrollViewController에 추가정보를 입력합니다</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<p>Run 버튼을 눌러 실행해 보면, 페이지간에 여백이 있는 페이징 뷰가 나오는 것을 확인할 수 있습니다. </p>
+		<div class="img_div img_width40 img_left">
+		  <img src="./pagingscroll_images/6_custom_result.png" />
+		  <p class="img_caption">여백을 가지는 페이징 뷰가 완성 되었습니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PrototypeSample maintained by <a href="http://codershigh.github.io/">CodersHigh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
