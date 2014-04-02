@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PilotPlant : Create mobile app prototype using Xcode Storyboard" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+
+    <title>PilotPlant</title>
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">MyIssue 프로토타입</h1>
+          <h2 id="project_tagline">간단한 프로토타입 만들기</h2>
+
+            <section>
+              <a class="downloads" href="https://dl.dropboxusercontent.com/u/429043/PilotPlant/MyIssue_Images.zip">MyIssue Images Source</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        
+        <h2>1. 긴 콘텐트 표시하기 </h2>
+        
+        <p>이전의 예제에서 손으로 그린 그림을 이용해 프로토타입을 만들었다면, 이번에는 Xcode에서 제공하는 iOS의 기본 요소들을 이용해 보다 정확한 프로토타입을 만들어 봅시다.
+        이 단계의 진행을 위해 iOS의 기본 UI 요소들에 대한 이해가 필요합니다. 단계별로 새롭게 만나는 UI요소들을 학습할 수도 있지만 iOS HIG의 'UI 구성요소' 부분을 읽어보고 시작하길 권합니다.. </p>
+        
+        
+        <p>PilotPlant 템플리트로 새로운 프로젝트를 만들고 이름을 MyIssuePP라고 줍니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./02_01_images/1_new_project.png" />
+		  <p class="img_caption">MyIssuePP 라는 이름의 프로젝트를 만듭니다..</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>시작점이 되는 씬을 테이블 뷰 컨트롤러 오브젝트를 이용해 만든다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./02_01_images/2_1st_scene_tableview.png" />
+		  <p class="img_caption">첫 번째 씬은 테이블 뷰이다. </p>
+		</div>
+		<br style="clear:both;" />
+
+		<p>첫 번째 씬의 테이블 뷰 오브젝트를 선택한 뒤, 애트리뷰트 인스펙터의 Content 항목을 Static Cells 로 변경한다. Static Cells 는 우리가 스토리보드에서 구성하는 대로 화면에 표시되는 테이블 뷰를 만들고, Dynamic Prototype은 코드를 통해 테이블 뷰를 표시하는 방식이다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./02_01_images/3_1st_scene_static.png" />
+		  <p class="img_caption">테이블 뷰를 Static Cell 타입으로 변경</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>이미지들을 불러들입니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./02_01_images/4_image_asset.png" />
+		  <p class="img_caption">이미지들을 불러들입니다. </p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>테이블 뷰 셀 오브젝트를 아래 그림과 같이 구성합니다. 화면에 보이지 않는 부분은 직접 구성하셔도 되고, 프로젝트 파일을 참고해서 작성하셔도 좋습니다. </p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./02_01_images/5_1st_scene_cell_compose.png" />
+		  <p class="img_caption">테이블 뷰 셀을 구성합니다. </p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>네비게이션 아이템을 구성합니다. 네비게이션 아이템은 씬이 네비게이션 컨트롤러에 의해 화면에 표시될 때 네비게이션 바에 나타나는 부분을 말합니다. 타이틀로 '마이뉴스'를 입력하고 오른쪽 바 아이템으로 그림과 같이 바 버튼 오브젝트를 넣습니다.</p>
+		<div class="img_div img_width80 img_left">
+		  <img src="./02_01_images/6_1st_scene_barbuttonitem.png" />
+		  <p class="img_caption">네비게이션 아이템을 구성합니다. </p>
+		</div>
+		<br style="clear:both;" />
+
+		<p>새로운 씬을 추가합니다. 오브젝트 라이브러리에서 뷰 컨트롤러 오브젝트 하나를 캔버스로 드래그 앱 드롭합니다. 클래스를 CHContentScrollViewController로 변경하고 User Defined Runtime Attributes 항목에 'xibName' 키를 만들고 로드할 xib 파일의 이름을 입력합니다. 여기에서는 'GameIndustry_Detail'이라는 xib를 만들어 사용할 것입니다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/7_2nd_scene_contentscroll.png" />
+		<p class="img_caption">CHContentScrollViewController를 만들고 xib 이름을 지정합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>iOS용 뷰 파일을 하나 추가하고 이름을 'GameIndustry_Detail'라고 줍니다. 뷰의 Simulated Metrics의 Size 항목이 'Freeform'으로 되어 있으면 뷰의 크기를 자유롭게 설정할 수 있습니다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/8_2nd_scene_xib.png" />
+		<p class="img_caption">CHContentScrollViewController를 만들고 xib 이름을 지정합니다.</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>xib 파일의 소유권자인 File'sOwner는 UIViewController 클래스여야 합니다. 그림과 같이 클래스 이름을 지정해 줍니다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/9_2nd_scene_xib_identity.png" />
+		<p class="img_caption">xib 파일의 File'sOwner를 UIViewController로 변경</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>File'sOwner 오브젝트인 뷰 컨트롤러는 뷰를 관리하는 오브젝트이며, 우리가 스토리보드에서 흔히 볼 수 있는 씬 관리자의 다른 모습입니다. File'sOwner의 connection 인스펙터에서, view가 우리가 구성한 뷰를 가리키도록 연결합니다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/10_2nd_scene_xib_view_connect.png" />
+		<p class="img_caption">뷰 컨트롤러의 뷰 연결</p>
+		</div>
+		<br style="clear:both;" />
+		
+		
+		<h2>2. 모달 올리고 내리기 </h2>
+		
+		<p>모달은 큰 테스크 안에서 작은 테스크를 진행하기에 적당한 뷰 제공방식입니다. 이 예제에서는 카테고리의 선택을 위해 모달을 사용하겠습니다. 모달을 내리는 것에는 약간의 기술적인 부분이 필요합니다. 일반적으로 모달에서 진행한 테스크의 결과가 모달이 내려갈 때 반영되어야 하기 때문입니다. </p>
+		
+		<p>네비게이션 컨트롤러와 테이블 뷰 씬을 만들고 두번째 씬의 바 버튼 아이템으로부터 모달 세그웨이 연결을 한다. </p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/11_3rd_scene_modal.png" />
+		<p class="img_caption">모달 세그웨이 연결</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>네비게이션바가 반 투명한 검은색이 되길 원하기 때문에 두 개의 네비게이션 바 모두 Black 으로 색상을 변경하고 Translucent에 체크한다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/12_navibar_tint.png" />
+		<p class="img_caption">네비게이션 바 컬러 변경</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>모달로 올라온 씬을 아래 그림과 같이 테이블 뷰로 구성한다. 바 버튼 아이템을 통해 모달을 내릴 수 있도록 뷰 컨트롤러 오브젝트의 dismiss: 액션으로 연결한다. '원전 방사능 공포' 테이블 뷰 셀을 선택하면 모달이 내려가면서 두번째 씬에 변화가 있어야 한다. 그러므로 테이블 뷰 셀에 버튼을 채워넣고 그 버튼으로부터 뷰 컨트롤러의 dismissPush: 액션으로 연결한다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/13_modal_dismiss.png" />
+		<p class="img_caption">모달 씬 구성하고 디스미스 액션 연결</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>버튼 등은 생성시에 글로벌 틴트 색상을 기본 색상으로 가진다. 우리 앱은 오렌지 색을 기본 색상으로 사용하기 때문에 스토리보드의 'Global Tint' 색상을 오렌지 색상으로 바꾼다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/14_storyboard_global_tint.png" />
+		<p class="img_caption">글로벌 틴트 컬러 변경</p>
+		</div>
+		<br style="clear:both;" />
+		
+		<p>모달이 디스미스 될 때 씬이 변경되도록 한다. 새로운 씬을 테이블 뷰 컨트롤러를 이용해 만들어서 구성하고, 그림과 같이 버튼을 통해 push 세그웨이로 연결한다. 세그웨이의 Identifier로 'ModalDismissPush'를 지정한다. 이렇게 하면 dismissPush 액션을 통해 모달이 내려갈 때 이 세그웨이를 찾아서 실행하게 된다.</p>
+		<div class="img_div img_width80 img_left">
+		<img src="./02_01_images/15_dismiss_push_segue.png" />
+		<p class="img_caption">모달 디스미스하면서 씬 교체하기</p>
+		</div>
+		<br style="clear:both;" />
+		
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PrototypeSample maintained by <a href="http://codershigh.github.io/">CodersHigh</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
